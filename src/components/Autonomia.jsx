@@ -1,18 +1,19 @@
-import React, {Component} from "react";
-import PropTypes from 'prop-types';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 class Autonomia extends Component {
-    render() {
-        return (
-            <ul>
-                <li>Autonomía: {this.props.km} km</li>
-            </ul>
-        )  
-    }
+	render() {
+		console.log(this.props.km)
+		return (
+			<ul>
+				<li>Autonomía: {this.props.km} km</li>
+			</ul>
+		)
+	}
 }
 
 Autonomia.propTypes = {
-    km: PropTypes.number.isRequired
+	km: PropTypes.number.isRequired,
 }
 
-export default Autonomia;
+export default Autonomia
